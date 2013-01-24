@@ -23,6 +23,7 @@
 		467C121416B1AEFF008D6ED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467C11EF16B1AEFF008D6ED6 /* Foundation.framework */; };
 		467C121C16B1AEFF008D6ED6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 467C121A16B1AEFF008D6ED6 /* InfoPlist.strings */; };
 		467C121F16B1AEFF008D6ED6 /* mapTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C121E16B1AEFF008D6ED6 /* mapTestTests.m */; };
+		467C122916B1AF9B008D6ED6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467C122816B1AF9B008D6ED6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		467C121B16B1AEFF008D6ED6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		467C121D16B1AEFF008D6ED6 /* mapTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapTestTests.h; sourceTree = "<group>"; };
 		467C121E16B1AEFF008D6ED6 /* mapTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapTestTests.m; sourceTree = "<group>"; };
+		467C122816B1AF9B008D6ED6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467C122916B1AF9B008D6ED6 /* MapKit.framework in Frameworks */,
 				467C11EE16B1AEFF008D6ED6 /* UIKit.framework in Frameworks */,
 				467C11F016B1AEFF008D6ED6 /* Foundation.framework in Frameworks */,
 				467C11F216B1AEFF008D6ED6 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		467C11EC16B1AEFF008D6ED6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				467C122816B1AF9B008D6ED6 /* MapKit.framework */,
 				467C11ED16B1AEFF008D6ED6 /* UIKit.framework */,
 				467C11EF16B1AEFF008D6ED6 /* Foundation.framework */,
 				467C11F116B1AEFF008D6ED6 /* CoreGraphics.framework */,
@@ -378,7 +382,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapTest/mapTest-Prefix.pch";
 				INFOPLIST_FILE = "mapTest/mapTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,7 +395,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapTest/mapTest-Prefix.pch";
 				INFOPLIST_FILE = "mapTest/mapTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
